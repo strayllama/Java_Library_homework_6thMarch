@@ -10,9 +10,9 @@ public class TestBorrower {
 
     @Before
     public void before(){
-        mainLibrary = new Library();
-        book = new Book();
-        person = new Borrower();
+        this.mainLibrary = new Library();
+        this.person = new Borrower();
+        this.book = new Book(Genre.Horror);
     }
 
     @Test
